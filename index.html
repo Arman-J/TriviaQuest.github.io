@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trivia Quest-Main/Home</title>
+        <link href="https://fonts.googleapis.com/css?family=Nosifer|Poppins&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        #tq,#h1{font-family:Nosifer; color:lime; text-align:center; background-color:black; overflow:auto;}
+        ul{text-align:center; color:white; background-color:black;   border-top:solid rgb(201, 6, 6) 11px; font-family:Nosifer; font-size:15px; width:1326px;height:43px; overflow:auto;}
+        .nav{margin-left:140px; overflow:auto;}
+        #left{margin-left:-2px; overflow:auto;}
+        a{color:white; text-decoration:none; overflow:auto;}
+* {
+  margin: 0;
+  padding: 1;
+  overflow:auto;
+}
+ul {
+  list-style-type: none;
+  position: absolute;
+   overflow:auto;
+}
+.underbar {
+  width: 0;
+  height: 5px;
+  background: rgba(100, 100, 200, 0);
+  top: 20px;
+  position: absolute;
+  -webkit-transition: 0.5s ease;
+   overflow:auto;
+}
+li {
+  float:left;
+  -webkit-transition: 0.5s ease;
+  cursor: pointer;
+   overflow:auto;
+}
+li:hover {
+  text-shadow: 0px -2px 0px #000000, 0 0 5px rgba(255, 255, 255, 0.8), 0 -4px 15px rgba(255, 255, 255, 0.5);
+   overflow:auto;
+}
+li:nth-of-type(1):hover ~ .underbar {
+  left: 30px;
+  width: 60px;
+  background: #fa076c;
+   overflow:auto;
+}
+li:nth-of-type(2):hover ~ .underbar {
+  left: 108px;
+  width: 114px;
+  background: #68fa07;
+   overflow:auto;
+}
+li:nth-of-type(3):hover ~ .underbar {
+  left: 238px;
+  width: 69px;
+  background: #f22e9d;
+   overflow:auto;
+}
+li:nth-of-type(4):hover ~ .underbar {
+  left: 324px;
+  width: 42px;
+  background: #bfff00;
+   overflow:auto;
+}
+li:nth-of-type(5):hover ~ .underbar {
+  left: 383px;
+  width: 109px;
+  background: #ff9100;
+   overflow:auto;
+}
+li:nth-of-type(6):hover ~ .underbar {
+  left: 509px;
+    width: 67px;
+  background: #00d0ff;
+   overflow:auto;
+}
+h2{margin-top:51px; margin-left:18px; font-family:Nosifer; color:rgb(130,7,17); overflow:auto;}
+#cc{color:blue;}
+.line-red{border-top:solid rgb(201, 6, 6) 11px; overflow:auto;}
+.line-green{border-top:solid lime 11px; overflow:auto;}
+footer{background-color:rgb(171, 171, 171); margin-top:8px; margin-bottom:3px; overflow:auto; font-family:century gothic;}
+p{margin:5px; font-family:Poppins; overflow:auto; font-size:20px;}
+    </style>
+    <body>
+        <h1 id="tq"><a id="h1"href="https://www.khanacademy.org/computer-programming/trivia-quest-mainhome/6445268153417728">Trivia Quest™</a></h1>
+        <nav>
+            <ul>
+              <li id="left"><a href="https://www.khanacademy.org/computer-programming/trivia-quest-mainhome/6445268153417728">Home</a></li>
+              <li class="nav" ><a href="https://www.khanacademy.org/computer-programming/trivia-quest-products/6280301032783872">Products</a></li>
+              <li class="nav"><a href="https://www.khanacademy.org/computer-programming/trivia-quest-about/5599171027681280">About</a></li>
+              <li class="nav" ><a href="https://www.khanacademy.org/computer-programming/trivia-quest-products/6280301032783872">Buy</a></li>
+              <li class="nav"><a href="https://www.khanacademy.org/computer-programming/trivia-quest-contacts/5504659668353024">Contacts</a></li>
+              <li class="nav" id="back"><a href="https://www.khanacademy.org/computer-programming/trivia-quest-log-insign-up/5092672849330176">Log In Or Sign Up</a></li>
+              <div class="underbar"></div>
+            </ul>
+        </nav>
+        <p class="line-red">
+        <h2>Problem</h2>
+        <p class="line-green">
+        <p>Our invention helps kids who are having trouble with their school subjects. It will help people study in a fun way; a trivia game! That way, it can promote them to having fun, and studying at the same time! With this game, People who aren't really into studying can study and have fun at the same time, with some competitiveness on the side.</p>
+        <p class="line-red">
+        <h2>How it works</h2>
+        <p class="line-green">
+        <p>We are making a trail-like path with dice to use as movement choice, and different spots have different types of questions,making getting different questions very easy. Using game currency, it can make the game exciting and competitive. And the first person to get a certain amount of points wins the game.</p>
+        <p class="line-red">
+        <footer>Trivia Quest™ This page is protected under the <a id="cc" href="https://creativecommons.org/licenses/by/4.0/">creative commons</a> By Arman Johal</footer>
+    </body>
+</html>
