@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<!--Contacts-->
+<!--Login-->
     <head>
         <meta charset="utf-8">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <title>Trivia Quest Contacts</title>
+	<!--Change-->
+        <title>Trivia Quest Log in or Sign up</title>
         <link href="https://fonts.googleapis.com/css?family=Nosifer|Poppins&display=swap" rel="stylesheet">
     </head>
     <style>
         #tq,#h1{font-family:Nosifer; color:lime; text-align:center; background-color:black; overflow:auto;}
-        ul{text-align:center; color:white; background-color:black;   border-top:solid rgb(201, 6, 6) 11px; font-family:Nosifer; font-size:15px; width:1320px;height:43px; overflow:auto;}
+        ul{text-align:center; color:white; background-color:black;   border-top:solid rgb(201, 6, 6) 11px; font-family:Nosifer; font-size:15px; width:1303px;height:43px; overflow:auto;}
         .nav{margin-left:140px; overflow:auto;}
         #left{margin-left:-2px; overflow:auto;}
         a{color:white; text-decoration:none; overflow:auto;}
@@ -82,9 +83,28 @@ h2{margin-top:51px; margin-left:18px; font-family:Nosifer; color:rgb(130,7,17); 
 #cc{color:blue;}
 .line-red{border-top:solid rgb(201, 6, 6) 11px; overflow:auto;}
 .line-green{border-top:solid lime 11px; overflow:auto;}
-footer{background-color:rgb(171, 171, 171); margin-top:8px; margin-bottom:3px; overflow:auto; font-family:century gothic; position:absolute; bottom:0px; width:100%;}
+footer{background-color:rgb(171, 171, 171); margin-top:8px; margin-bottom:3px; overflow:auto; font-family:century gothic;}
 p{margin:5px; font-family:Poppins; overflow:auto; font-size:20px;}
 #title{width:55px; margin-bottom:-18px; margin-right:5px;}
+<!--Add if nesssary-->
+#pass{margin-top:20px;}
+#email{
+            margin-left: 37px;<!--37-->
+        }
+        #button{
+            margin-left: 123px;
+            margin-top:6px;
+            border: solid 2px black;
+            padding: 6px;
+            background-color: lime;
+            font-family: Poppins;
+            font-size: 13px;
+			text-align:center;
+            
+        }
+    #or{margin-top:10px; margin-left:125px; color:lime;}
+    #sign{margin-top:-5px;}
+    #rainbow{background-image: linear-gradient(to left, purple, indigo, blue, green, orange, red);-webkit-background-clip: text; color:transparent;}
     </style>
     <body>
         <h1 id="tq"><a id="h1"href="index.html"><image src="images/LogoTrans.png" id="title">Trivia Quest™</a></h1>
@@ -100,10 +120,40 @@ p{margin:5px; font-family:Poppins; overflow:auto; font-size:20px;}
             </ul>
         </nav>
         <!--Add content-->
-		<h2>Emails</h2>
+		<h2>Log in</h2>
         <p class="line-green">
-        <p>Arman - armanj4901@is10q.com<br>Sarfaraz - sarfarazk4939@is10q.com<br>Rohin - rohina1372@is10q.com</p>
-        <p class="line-red">
+        <form action="index.html" method="GET" >
+    <label for="user">Username</label>
+    <input type= "text" method= "post" id="user" required minlength="3" maxlength="15">
+<br>
+<br>
+    <label for="pass">Password</label>
+    <input type= "password" method= "post" id="pass" required minlength="3" maxlength="15">
+    <br>
+	<br>
+    <input type="submit" value="Log In" id="button">
+</form>
+<p class="line-red">
+<h2 id="or">or</h2>
+<h2 id="sign">Sign up</h2>
+<p class="line-green">
+<form action="index.html" method="GET" >
+    <label for="user">Username</label>
+    <input type= "text" id="user" required minlength="3" maxlength="15">
+    <br>
+	<br>
+    <label for="email">Email</label>
+    <input type="text" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+<br>
+<br>
+    <label for="pass">Password</label>
+    <input type= "password" id="pass" required minlength="3" maxlength="15">
+    <br>
+	<br>
+    <input type="submit" value="Create Acount" id="button">
+</form>
+<p class="line-red">
+<p id="rainbow">(This does not save it is purely for aesthetical purposes only)</p>
         <footer>Trivia Quest™ This page is protected under the <a id="cc" href="https://creativecommons.org/licenses/by/4.0/" target="blank">creative commons</a> By Arman Johal</footer>
     </body>
 </html>
