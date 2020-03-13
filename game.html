@@ -2,12 +2,29 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Nosifer|Poppins&display=swap" rel="stylesheet">
+
 <title>Trivia Quest Game</title>
 <style>
 canvas {
     border:1px solid #d3d3d3;
     background-color: #f1f1f1;
+	margin-left:450px;
 }
+p,a{margin:5px; font-family:Poppins; overflow:auto; font-size:20px; color:black;}
+a{color:red; text-decoration:none;}
+a:hover{color:rgb(139,0,0);}
+em{color:lime;}
+button{
+            margin-left: 23px;
+            margin-top:6px;
+            border: solid 2px black;
+            padding: 6px;
+            background-color: lime;
+            font-family: Poppins;
+            font-size: 13px;
+			text-align:center;
 </style>
 </head>
 <body onload="startGame()">
@@ -131,9 +148,10 @@ function accelerate(n) {
 }
 </script>
 <br>
-<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
-<p>Use the ACCELERATE button to stay in the air</p>
-<p>How long can you stay alive?</p>
-<a href="contacts-index.html">Go Back</a>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">Accelerate</button>
+<button onmousedown="location.reload();">Retry</button>
+<p>Use the <em>Accelerate</em> button to stay in the air</p>
+<p>Use the <em>Retry</em> button to retry</p>
+<p><a href="contacts-index.html">Go Back</a>-Click</p>
 </body>
 </html>
